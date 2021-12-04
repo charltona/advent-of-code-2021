@@ -1,4 +1,4 @@
-import {getBufferLength} from "../util/util";
+import {convertBinToDec, getBufferLength} from "../util/util";
 
 export const getReading = (input): {gammaRate: string, epsilonRate: string} => {
   const bufferLength = getBufferLength(input);
@@ -15,9 +15,6 @@ export const getReading = (input): {gammaRate: string, epsilonRate: string} => {
   return {gammaRate, epsilonRate};
 }
 
-export const convertBinToDec = (input: string): number => {
-  return parseInt(input, 2);
-}
 
 export const calculateReadings = (reading1: number, reading2: number) => {
   return reading1 * reading2

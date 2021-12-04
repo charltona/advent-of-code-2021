@@ -1,10 +1,10 @@
 import {
-    convertBinToDec,
     getReading,
     getPowerConsumption,
     getOxygenRating,
     getC02ScrubberRating, calculateLifeSupportRating, calculateReadings
 } from "./day_3";
+import {convertBinToDec} from "../util/util";
 
 const testData = [
     '00100',

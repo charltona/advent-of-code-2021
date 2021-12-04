@@ -27,3 +27,8 @@ export class Signal {
 export function multiplyValues(val1, val2) {
   return val1 * val2
 }
+
+
+export const convertBinToDec = (input: string): number => {
+  return parseInt(input, 2);
+}
