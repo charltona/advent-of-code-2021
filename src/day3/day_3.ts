@@ -1,6 +1,4 @@
-function getBufferLength(input) {
-  return input[0].length;
-}
+import {getBufferLength} from "../util/util";
 
 export const getReading = (input): {gammaRate: string, epsilonRate: string} => {
   const bufferLength = getBufferLength(input);
